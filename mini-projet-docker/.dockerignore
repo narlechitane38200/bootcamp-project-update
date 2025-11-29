@@ -1,2 +1,5 @@
-.git/
-.env
+initdb
+.dockerignore
+Dockerfile
+README.md
+docker-compose.yml
