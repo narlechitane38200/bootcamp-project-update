@@ -1,63 +1,7 @@
-
-# PayMyBuddy - Financial Transaction Application
-
-This repository contains the *PayMyBuddy* application, which allows users to manage financial transactions. It includes a Spring Boot backend and MySQL database.
-
-**![PayMyBuddy Overview](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0fGeMjotdY0KzJL13cmGhXad3GM_kn7OSXZJ4CCSQ89zZTlrhBVVi91QjRMgVeszmUMAMAgyavzr4VyQ9YOAUiWmL2sF6aVQYiJPLZfztxv7ERNsIra2O_2SYIX5ZFY5eOARMeI2qnOwrIymuyJnvtuYs?key=mLqAl_ccMoG4hHcRzSYKpw)**
-
----
-
-## Objectives
-
-This POC demonstrates the deployment of the *PayMyBuddy* app using Docker containers, with a focus on:
-
-- Improving deployment processes
-- Versioning infrastructure releases
-- Implementing best practices for Docker
-- Using Infrastructure as Code
-
-### Key Themes:
-
-- Dockerization of the backend and database
-- Orchestration with Docker Compose
-- Securing the deployment process
-- Deploying and managing Docker images via Docker Registry
-
----
-
-## Context
-
-*PayMyBuddy* is an application for managing financial transactions between friends. The current infrastructure is tightly coupled and manually deployed, resulting in inefficiencies. We aim to improve scalability and streamline the deployment process using Docker and container orchestration.
-
----
-
-## Infrastructure
-
-The infrastructure will run on a Docker-enabled server with **Ubuntu 20.04**. This proof-of-concept (POC) includes containerizing the Spring Boot backend and MySQL database and automating deployment using Docker Compose.
-
-### Components:
-
-- **Backend (Spring Boot):** Manages user data and transactions
-- **Database (MySQL):** Stores users, transactions, and account details
-- **Orchestration:** Uses Docker Compose to manage the entire application stack
-
----
-
-## Application
-
-*PayMyBuddy* is divided into two main services:
-
-1. **Backend Service (Spring Boot):**
-   - Exposes an API to handle transactions and user interactions
-   - Connects to a MySQL database for persistent storage
-
-2. **Database Service (MySQL):**
-   - Stores user and transaction data
-   - Exposed on port 3306 for the backend to connect
-
 ### Build and Test (7 Points)
 
-You will build and deploy the backend and MySQL database in Docker containers.
+Depuis mon repo git perso, j'ai ajouté un fichier .env (contenant les différentes variables sensibles) et un fichier .gitignore (qui contient le .env pour éviter qu'il ne soit copié lors du git clone). Aussi, j'ai ajouté les répertoires initdb et les fichiers 
+Ensuite depuis une session Docker Playground, j'ai cloné le repo mini projet docker en local.
 
 #### Database Initialization
 The database schema is initialized using the initdb directory, which contains SQL scripts to set up the required tables and initial data. These scripts are automatically executed when the MySQL container starts.
