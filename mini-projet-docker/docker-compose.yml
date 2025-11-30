@@ -1,7 +1,7 @@
 services:
 
   paymybuddy-db:
-    image: mysql:8.0
+    image: localhost:5000/mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -14,7 +14,7 @@ services:
       - paymybuddy-net
 
   paymybuddy-backend:
-    image: backend-app:latest
+    image: localhost:5000/backend-app:latest
     restart: always
     depends_on:
       - paymybuddy-db
