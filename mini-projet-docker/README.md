@@ -1,5 +1,3 @@
-### Build and Test (7 Points)
-
 Depuis mon repo git perso, j'ai ajouté un fichier .env (contenant les différentes variables sensibles) et un fichier .gitignore (qui contient le .env pour éviter qu'il ne soit copié lors du git clone). Aussi, j'ai ajouté le répertoire initdb et certains fichiers inutiles lors de l'étape copy lors du build de l'image backend-app.
 Ensuite depuis une session Docker Playground, j'ai cloné le repo mini projet docker en local. J'ai buildé une image backend-app depuis le dockerfile et puller une image officiel mysql:8.0.
 
